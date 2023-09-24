@@ -1,5 +1,4 @@
-import { Switch, BrowserRouter } from 'react-router-dom';
-
+import { Switch } from 'react-router-dom';
 import 'rsuite/dist/styles/rsuite-default.css';
 import './styles/main.scss';
 import PrivateRoute from './components/PrivateRoute';
@@ -9,16 +8,14 @@ import PublicRoute from './components/PublicRoute';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <PublicRoute path="/signin">
-          <SignIn />
-        </PublicRoute>
-        <PrivateRoute path="/">
-          <Home />
-        </PrivateRoute>
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <PublicRoute path="/signin">
+        <SignIn />
+      </PublicRoute>
+      <PrivateRoute path="/">
+        <Home />
+      </PrivateRoute>
+    </Switch>
   );
 }
 
