@@ -9,10 +9,10 @@ import {
   Modal,
   Schema,
 } from 'rsuite';
-import { useModalState } from '../../misc/custom-hooks';
+import { useModalState } from '../misc/custom-hooks';
 import { useCallback, useRef, useState } from 'react';
 import firebase from 'firebase/app';
-import { auth, database } from '../../misc/firebase';
+import { auth, database } from '../misc/firebase';
 
 const { StringType } = Schema.Types;
 

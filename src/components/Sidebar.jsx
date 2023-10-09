@@ -1,5 +1,5 @@
 import { Divider } from 'rsuite';
-import CreateRoomBtnModal from './dashboard/CreateRoomBtnModal';
+import CreateRoomBtnModal from './CreateRoomBtnModal';
 import DashboardToggole from './dashboard/DashboardToggle';
 import ChatRoomList from './rooms/ChatRoomList';
 import { useEffect, useRef, useState } from 'react';
